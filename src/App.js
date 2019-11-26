@@ -7,7 +7,8 @@ import './App.css';
 
 const movies = [{
     id: 1,
-    title: 'Star Wars'
+    title: 'Star Wars',
+    desc: 'Nullam dictum felis eu pede mollis pretium.'
   }, {
     id: 2,
     title: 'Spider Man'
@@ -20,7 +21,17 @@ const movies = [{
   }
 ];
 
-class App extends Component {
+class App extends Component {  
+  async componentDidMount() {
+    try {
+      const res = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=500892bdb8989fc3ae5765f1838aa9e1&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1');
+      const movies = await res.json();
+      console.log(movies);
+    } catch(e) {
+      console.log(e);
+    }
+  }
+  
   render() {
     return (
       <div className="App">
@@ -31,6 +42,7 @@ class App extends Component {
           <Movie 
             key={movie.id}
             movie={movie} 
+            desc={movie.desc}
           />
         ))}
       </div>
