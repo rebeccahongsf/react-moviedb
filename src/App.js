@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter as Router, 
   Route,
-  Switch
+  Switch,
+  Link
 } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
@@ -10,17 +11,19 @@ import './App.css';
 import MoviesList from './MoviesList';
 
 const App = () => (
-    <Router>
-      <div className="App">
-        <header className="App-header">
+  <Router>
+    <div className="App">
+      <header className="App-header">
+        <Link to="/">
           <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        <Switch>
-          <Route path="/test" component={Test} />
-          <MoviesList />
-        </Switch>
-      </div>
-    </Router>
+        </Link>
+      </header>
+      <Switch>
+        <Route exact path="/" component={MoviesList} />
+        <Route path="/test" component={Test} />
+      </Switch>
+    </div>
+  </Router>
 )
 
 export default App;
