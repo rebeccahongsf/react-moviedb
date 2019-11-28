@@ -13,8 +13,8 @@ const Movie = (props) => (
 
 export default Movie;
 
-// static propTypes = {
-//   movie: PropTypes.shape({
-//     title: PropTypes.string.isRequired
-//   })
-// }
+Movie.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string.isRequired
+  }).isRequired
+};
