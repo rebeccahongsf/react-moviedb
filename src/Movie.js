@@ -5,9 +5,10 @@ import PropTypes from 'prop-types';
 
 // Functional Stateless Components
 // This should be used when you are not using lifecycle methods or state refs.
-const Movie = (props) => (
+// ES6 Object Destruction: Because of object destructuring, we can use {movie} inplace of props. 
+const Movie = ({movie}) => (
   <div>
-    <h3>{props.movie.title}</h3>
+    <h3>{movie.title}</h3>
   </div>
 );
 
