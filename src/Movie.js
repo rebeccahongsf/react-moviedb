@@ -1,12 +1,17 @@
 import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
+
+// Functional Stateless Components
+// This should be used when you are not using lifecycle methods or state refs.
 const Movie = (props) => (
   <div>
-    <h1>{this.props.movie.title}</h1>
-    <p>{this.props.desc}</p>
+    <h3>{props.movie.title}</h3>
   </div>
-)
+);
+
+export default Movie;
 
 // static propTypes = {
 //   movie: PropTypes.shape({
