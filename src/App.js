@@ -16,7 +16,7 @@ const App = () => (
     <div className="App">
       <header className="App-header">
         <Link to="/">
-          <img src={logo} className="App-logo" alt="MovieDB logo" />
+          <img src={logo} alt="MovieDB logo" />
         </Link>
       </header>
       <Switch>
