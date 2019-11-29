@@ -9,6 +9,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4em;
+  background-color: #eee;
 }
 
 h1,
@@ -23,10 +24,10 @@ margin: 10px;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #809C8E;
   height: 60px;
   padding: 20px;
-  color: white;
+  color: #eee;
 }
 
 .App-title {
