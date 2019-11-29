@@ -1,7 +1,7 @@
 # MovieDB
 
 ## Description
-This is a movie database created with React using [the MovieDB](https://www.themoviedb.org/).
+This is a movie database created with React using [theMovieDB](https://www.themoviedb.org/).
 
 ## Contributing
 Not currently open to contributions
