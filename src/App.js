@@ -15,7 +15,7 @@ const App = () => (
   <Router>
     <div className="App">
       <header className="App-header">
-        <Link to="/">
+        <Link to="/react-moviedb">
           <img src={logo} alt="MovieDB logo" />
         </Link>
       </header>
@@ -28,8 +28,3 @@ const App = () => (
 )
 
 export default App;
-
-// Match is where the parameters are stored within React Router
-const Test = ({match}) => (
-  <h1>{match.params.id}</h1>
-)

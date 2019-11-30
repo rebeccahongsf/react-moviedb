@@ -11,7 +11,7 @@ const POSTER_PATH = 'https://image.tmdb.org/t/p/w154';
 // ES6 Object Destruction: Because of object destructuring, we can use {movie} inplace of props. 
 // {`{variable.here}`}  — String Interpolation 
 const Movie = ({movie}) => (
-  <Link to={`/${movie.id}`}>
+  <Link to={`/react-moviedb/${movie.id}`}>
     <Overdrive id={`${movie.id}`}>
       <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />
     </Overdrive>
