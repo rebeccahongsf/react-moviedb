@@ -20,8 +20,8 @@ const App = () => (
         </Link>
       </header>
       <Switch>
-        <Route exact path="/" component={MoviesList} />
-        <Route path="/:id" component={MovieDetail} />
+        <Route exact path="/react-moviedb" component={MoviesList} />
+        <Route path="/react-moviedb/:id" component={MovieDetail} />
       </Switch>
     </div>
   </Router>
